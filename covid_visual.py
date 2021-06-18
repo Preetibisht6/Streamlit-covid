@@ -9,7 +9,7 @@ import streamlit as st
 import plotly.express as px
 import pandas as pd
 from PIL import Image
-import pybase64
+#import pybase64
 import imageio
 import urllib.request as ulr
 
@@ -240,20 +240,10 @@ st.sidebar.header("GIF Animation - India")
 st.sidebar.checkbox('GIF Animation - India', True, key =6)
 st.header("GIF Animation - India")
 
-#gif_url = ulr('https://raw.githubusercontent.com/Preetibisht6/Streamlit-covid/main/COVID_India.gif')
-#g = ulr.urlopen(gif_url)
-#g.write(response.read())
 
-#file = urllib.urlopen('https://raw.githubusercontent.com/VinamraBharadwaj/COVID-19-India-and-World/main/COVID-19%20India.gif')
-#im = cStringIO.StringIO(file.read()) # constructs a StringIO holding the image
-#img = Image.open(im)
 
 if not st.checkbox('Hide Animation', False, key = 6):
-    #file = open(g, "rb")
-    #data_url  = ('https://raw.githubusercontent.com/Preetibisht6/Streamlit-covid/main/COVID_India.gif')
-    #contents = file.read()
-    #data_url = pybase64.b64encode(contents).decode("utf-8")
-    #file.close()
+
     st.markdown("![Alt Text](https://raw.githubusercontent.com/Preetibisht6/Streamlit-covid/main/COVID_India.gif)")
 
 
